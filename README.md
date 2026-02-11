@@ -1,7 +1,5 @@
 # placement-prep-platform
 
-# Placement Prep Platform
-
 ## Problem Statement
 Many students struggle to prepare for placements due to scattered resources, lack of structured practice, and no single platform to track progress.  
 This project aims to provide a complete placement preparation platform where students can practice DSA, aptitude, interview questions, and track their preparation journey.
