@@ -58,7 +58,8 @@
 const express = require("express");
 const dotenv = require("dotenv");
 const connectDB = require("./config/db");
-const authRoutes = require("./routes/authRoutes"); // make sure this line exists
+const authRoutes = require("./routes/authRoutes");
+const problemRoutes = require("./routes/problemRoutes");
 
 dotenv.config();
 const app = express();
@@ -69,8 +70,9 @@ connectDB();
 // Middleware
 app.use(express.json());
 
-// Connect auth routes
+// Routes
 app.use("/api/auth", authRoutes);
+app.use("/api/problems", problemRoutes);
 
 // Test route
 app.get("/", (req, res) => {
